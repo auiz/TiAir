@@ -227,6 +227,13 @@ controller = {
 </pre>
 
 
+WHAT ABOUT VERSION 1.0?
+==========================
+While it is no longer supported, version 1.0 has its own branch in the main repository:
+
+https://github.com/dawsontoth/TiAir/branches/1.0
+
+
 CONTACT INFORMATION
 ===========================
 
