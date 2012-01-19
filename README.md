@@ -220,14 +220,14 @@ controller = {
     def: 'list',
     actions: {
         list: function(title) {
-            alert(title); // <-- 'test'
+            alert(title); // 'test'
         }
     }
 };
 </pre>
 
 
-WHAT ABOUT VERSION 1.0?
+WHAT ABOUT VERSION 1.0
 ==========================
 While it is no longer supported, version 1.0 has its own branch in the main repository:
 
