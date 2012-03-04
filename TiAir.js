@@ -171,17 +171,17 @@ var TiAir = {};
                     controllerID = url.shift();
                     viewID = url.join('/');
                 }
-                model = arguments.length > 1 && arguments[1];
+                model = arguments.length > 1 && [].splice.call(arguments, 1);
             }
             else {
                 viewID = actionID;
-                model = arguments[0];
+                model = arguments;
             }
         }
 
         // Now we have all we need; invoke the view.
         var view = getView(controllerID, viewID);
-        var retVal = typeof view === 'function' ? view(model || {}) : view;
+        var retVal = typeof view === 'function' ? view.apply(context, model || []) : view;
 
         // Finally, restore the previous context.
         controllerID = savedControllerID;
